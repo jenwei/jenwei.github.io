@@ -109,12 +109,6 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
-.section-heading-spacer-clear {
-    float: left;
-    width: 200px;
-    border-top: 3px;
-}
-
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
