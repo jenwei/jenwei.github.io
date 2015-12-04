@@ -1,19 +1,30 @@
 <html>
   <head>
-    <title>JSON/Atom Custom Search API Example</title>
+    <!--Default compatability code-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Slack Coding Exercise</title>
   </head>
+
   <body>
-    <div id="content"></div>
-    <script>
-      function hndlr(response) {
-      for (var i = 0; i < response.items.length; i++) {
-        var item = response.items[i];
-        // in production code, item.htmlTitle should have the HTML entities escaped.
-        document.getElementById("content").innerHTML += "<br>" + item.htmlTitle;
-      }
-    }
-    </script>
-    <script src="https://www.googleapis.com/customsearch/v1?key=<span class="apiparam">AIzaSyDr-5cISsT0Kigr09_2TFIivwuD-8krtb8</span>&amp;cx=017576662512468239146:omuauf_lfve&amp;q=cars&amp;callback=hndlr">
-    </script>
+    <div class="lightbox">
+      <figure class="show">
+        <img id="photo" src="https://www.flickr.com/photos/olinhpv/17318249949" width="70%"/>
+          <figcaption>This is an iPad</figcaption>
+      </figure>
+
+      <!--Prev and next toggles-->
+      <span class="prev">&laquo;</span>
+      <span class="next">&raquo;</span>
+    </div>
+
+    <!--Custom script for photo lightbox-->
+    <script src="slack-exercise.js"></script>
   </body>
+  <address>
+    Made by me with help from online references (mentioned in the sourcecode) <br>
+    December 2015
+  </address>
 </html>
