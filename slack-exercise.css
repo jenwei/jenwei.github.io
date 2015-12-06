@@ -1,0 +1,63 @@
+/** Importing fonts from Google **/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900italic|Open+Sans:400,400italic,600,700,600italic,700italic);
+
+/** CSS specific to the slack-exercise **/
+
+/** http://themarklee.com/2013/12/26/simple-diy-responsive-slideshow-made-html5-css3-javascript **/
+#slack-exercise-body{
+	font: 12px 'Lato', sans-serif;
+	padding-top: 10%;
+	margin: auto; /*center body*/
+	/*define height and width to use margin auto*/
+	height:45%;
+	width: 45%;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.lightbox	{
+	background-color: rgba(255,255,255,1); /*white*/
+	border-radius: .5em;
+	box-shadow: 0 0 2em rgba(255,255,255,0.9); /*light grey*/
+	padding: .25em; /*add padding as 'frame' for photo*/
+}
+#slack-exercise-photo{
+	position: relative;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#slack-exercise-prev, #slack-exercise-next{
+	color:rgba(0,0,0,0.5);
+	font-size: 5em;
+	opacity: .25;
+  	padding-top:15%; /*position buttons over the figure*/
+  	position: absolute;
+	top: 15%;
+}
+
+#slack-exercise-prev:hover, #slack-exercise-next:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+
+#slack-exercise-prev{
+	left: .1em; /*more button positioning*/
+}
+
+#slack-exercise-next{
+	right: .1em; /*more button positioning*/
+}
+
+/*special address specifications for this exercise*/
+#slack-exercise-address{
+	padding-top: 2em;
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+	text-align: left;
+	color: rgba(255,255,255,0.5); /*grey*/
+}

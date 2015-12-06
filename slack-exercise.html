@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Slack Coding Exercise</title>
+    <link rel="stylesheet" href="./slack-exercise.css">
+
+    <link rel="icon" type="image/png" href="./slack-logo.png">
+
+    <!--Custom script for photo lightbox-->
+    <script src="./slack-exercise.js"></script>
   </head>
 
-  <body>
+  <body id="slack-exercise-body">
     <div class="lightbox">
-      <figure class="show">
-        <img id="photo" src="https://www.flickr.com/photos/olinhpv/17318249949" width="70%"/>
-          <figcaption>This is an iPad</figcaption>
+      <figure>
+        <!--Hard-coded test line-->
+        <!--<img id="photo" src="https://farm9.staticflickr.com/8732/17159475679_4a57db1f49.jpg"/> -->
+
+        <!--Populate img using images from Flickr API-->
+        <img id="slack-exercise-photo"></img>
+          <figcaption id="slack-exercise-caption">This is a generic caption</figcaption>
       </figure>
 
       <!--Prev and next toggles-->
-      <span class="prev">&laquo;</span>
-      <span class="next">&raquo;</span>
+      <span id="slack-exercise-prev">&laquo;</span>
+      <span id="slack-exercise-next">&raquo;</span>
     </div>
-
-    <!--Custom script for photo lightbox-->
-    <script src="slack-exercise.js"></script>
+    <address id="slack-exercise-address">
+      Made with help from online references (mentioned in the sourcecode) <br>
+      December 2015
+    </address>
   </body>
-  <address>
-    Made by me with help from online references (mentioned in the sourcecode) <br>
-    December 2015
-  </address>
 </html>

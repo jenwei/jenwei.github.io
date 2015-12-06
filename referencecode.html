@@ -1,0 +1,19 @@
+<script>
+      function hndlr(response) {
+        for (var i = 0; i < response.items.length; i++) {
+          var item = response.items[i];
+          // in production code, item.htmlTitle should have the HTML entities escaped.
+          document.getElementById("content").innerHTML += "<br>" + item.htmlTitle;
+        }
+      }
+    </script>
+    <script>
+      //necessary to wait for dom content to load or else the
+      //getElementsByClassName function won't work correctly
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        var container = document.getElementsByClassName("container");
+        container[0].addEventListener("click", function(){
+            container[0].style.color = getRandomColor();
+        });
+      });
+    </script>
